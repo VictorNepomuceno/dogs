@@ -1,43 +1,43 @@
 .photos:nth-child(2) {
-  grid-column: 2/4;
-  grid-row: span 2;
+    grid-column: 2/4;
+    grid-row: span 2;
 }
 
 .photos {
-  display: grid;
-  cursor: pointer;
+    display: grid;
+    cursor: pointer;
 }
 
-.photos img {
-  grid-area: 1/1;
+.photos > div {
+    grid-area: 1/1;
 }
 
 .span {
-  grid-area: 1/1;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff;
-  display: none;
-  transition: 0.2s;
-  gap: 0.5rem;
+    grid-area: 1/1;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    display: none;
+    transition: 0.2s;
+    gap: 0.5rem;
 }
 
 .photos:hover .span {
-  display: flex;
+    display: flex;
 }
 
 .span::before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  background: url(../../Assets/visualizacao.svg) no-repeat center center;
-  display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: url(../../Assets/visualizacao.svg) no-repeat center center;
+    display: block;
 }
 
 @media (max-width: 40rem) {
-  .photos:nth-child(2) {
-    grid-column: initial;
-    grid-row: initial;
-  }
+    .photos:nth-child(2) {
+        grid-column: initial;
+        grid-row: initial;
+    }
 }

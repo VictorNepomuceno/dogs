@@ -8,30 +8,32 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { UserStorage } from './UserContext';
 import User from './components/User/User';
 import ProtectedRoute from './components/helper/ProtectedRoute';
+import Photo from './components/Photo/Photo';
 
 const App = () => {
-  return (
-    <div>
-      <BrowserRouter>
-        <UserStorage>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="login/*" element={<Login />} />
-            <Route
-              path="conta/*"
-              element={
-                <ProtectedRoute>
-                  <User />
-                </ProtectedRoute>
-              }
-            />
-          </Routes>
-          <Footer />
-        </UserStorage>
-      </BrowserRouter>
-    </div>
-  );
+    return (
+        <div>
+            <BrowserRouter>
+                <UserStorage>
+                    <Header />
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="login/*" element={<Login />} />
+                        <Route
+                            path="conta/*"
+                            element={
+                                <ProtectedRoute>
+                                    <User />
+                                </ProtectedRoute>
+                            }
+                        />
+                        <Route path="foto/:id" element={<Photo />} />
+                    </Routes>
+                    {/* <Footer /> */}
+                </UserStorage>
+            </BrowserRouter>
+        </div>
+    );
 };
 
 export default App;

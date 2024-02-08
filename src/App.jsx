@@ -20,19 +20,19 @@ const App = () => {
                     <Header />
                     <main className="appBody">
                         <Routes>
-                            <Route path="/" element={<Home />} />
-                            <Route path="login/*" element={<Login />} />
+                            <Route path="/dogs" element={<Home />} />
+                            <Route path="/login/*" element={<Login />} />
                             <Route
-                                path="conta/*"
+                                path="/conta/*"
                                 element={
                                     <ProtectedRoute>
                                         <User />
                                     </ProtectedRoute>
                                 }
                             />
-                            <Route path="foto/:id" element={<Photo />} />
-                            <Route path="perfil/:user" element={<UserProfile />} />
-                            <Route path="*" element={<NotFound />} />
+                            <Route path="/foto/:id" element={<Photo />} />
+                            <Route path="/perfil/:user" element={<UserProfile />} />
+                            <Route path="/*" element={<NotFound />} />
                         </Routes>
                     </main>
                     <Footer />

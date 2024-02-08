@@ -1,4 +1,4 @@
-![WhatsApp Image 2024-02-08 at 19 01 06](https://github.com/VictorNepomuceno/dogs/assets/141886398/772a7d2c-37f1-4a41-9285-2248c268b378)Projeto feito no curso de React com JavaScript da Origamid.
+Projeto feito no curso de React com JavaScript da Origamid.
 
 Uma rede social para cachorros chamada Dogs onde é possível visualizar e comentar as postagens de outros usuários, criar um login, redefinir senha, fazer cadastro e também visualizar estatísticas das próprias postagens.
 

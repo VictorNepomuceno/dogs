@@ -11,7 +11,7 @@ const PhotoDelete = ({ id }) => {
         const alert = window.confirm('Tem certeza que deseja deletar a foto?');
         if (alert) {
             const { url, options } = PHOTO_DELETE(id);
-            const response = await request(url, options);
+            const { response } = await request(url, options);
             if (response.ok) window.location.reload();
         }
     }

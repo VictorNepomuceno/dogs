@@ -8,6 +8,7 @@ import { UserContext } from '../../UserContext';
 import LoginForm from './LoginForm';
 import styles from './Login.module.css';
 import NotFound from '../NotFound';
+import Head from '../helper/Head';
 
 const login = () => {
     const { login } = React.useContext(UserContext);
